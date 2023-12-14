@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework #3</title>
-    <!-- Normalize CSS -->
+    <title>Index</title>
+
+    <!-- Style Normalization -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Google Fonts -->
@@ -18,7 +22,7 @@
       rel="stylesheet"
     />
 
-    <!-- Main Stylesheet -->
+    <!-- Local CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -29,9 +33,9 @@
           <a class="logo link" href="./index.html"
             >Web<span class="header-logo">Studio</span></a
           >
-          <ul class="menu list">
+          <ul class="list menu">
             <li class="list-item">
-              <a class="item link" href="./index.html">Studio</a>
+              <a class="active item link" href="./index.html">Studio</a>
             </li>
             <li class="list-item">
               <a class="item link" href="./portfolio.html">Portfolio</a>
@@ -40,7 +44,7 @@
           </ul>
         </nav>
         <address class="contacts">
-          <ul class="address list">
+          <ul class="list address">
             <li class="contact-item">
               <a class="contact link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -58,23 +62,25 @@
 
     <!-- Main -->
     <main>
-      <!-- First Section -->
-      <section class="first-section">
-        <div class="container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
       <!-- Second Section -->
       <section class="second-section">
         <div class="container">
-          <h2 class="visually-hidden">List</h2>
-          <ul class="info list">
+          <h2 class="visually-hidden">Info</h2>
+          <ul class="list info">
             <li class="info-card">
               <div class="icon-container">
-                <svg class="icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                  <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="list-header">Strategy</h3>
@@ -86,8 +92,8 @@
 
             <li class="info-card">
               <div class="icon-container">
-                <svg class="icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                  <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="list-header">Punctuality</h3>
@@ -99,8 +105,8 @@
 
             <li class="info-card">
               <div class="icon-container">
-                <svg class="icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram"></use>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                  <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="list-header">Diligence</h3>
@@ -112,8 +118,8 @@
 
             <li class="info-card">
               <div class="icon-container">
-                <svg class="icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                  <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="list-header">Technologies</h3>
@@ -130,23 +136,19 @@
       <section class="third-section">
         <div class="container">
           <h2 class="header-title">What are we doing</h2>
-          <ul class="service list">
+          <ul class="list service">
             <li class="service-info">
-              <img
-                src="./images/img-1.jpg"
-                width="360"
-                alt="computer-monitor"
-              />
+              <img src="./images/img1.jpg" width="360" alt="computer-monitor" />
             </li>
             <li class="service-info">
               <img
-                src="./images/img-2.jpg"
+                src="./images/img2.jpg"
                 width="360"
                 alt="phone-applications"
               />
             </li>
             <li class="service-info">
-              <img src="./images/img-3.jpg" width="360" alt="smartphone" />
+              <img src="./images/img3.jpg" width="360" alt="smartphone" />
             </li>
           </ul>
         </div>
@@ -157,59 +159,71 @@
         <div class="container">
           <h2 class="header-title">Our Team</h2>
 
-          <ul class="team list">
+          <!-- Team Member 1 -->
+          <ul class="list team">
             <li class="team-member">
-              <img src="./images/img-4.jpg" width="264" alt="man-with-laptop" />
+              <img
+                src="./images/man-with-laptop.jpg"
+                width="264"
+                alt="man-with-laptop"
+              />
               <div class="member-info">
                 <h3 class="list-header">Mark Guerrero</h3>
                 <p class="list-text">Product Designer</p>
+                <!-- HW4 Socmed SVG Icons -->
+                <ul class="list socmed-info">
+                  <!-- Instagram -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
+                      <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                <ul class="social-media list">
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+                  <!-- Twitter -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- Facebook -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- LinkedIn -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
-                      <svg
-                        width="16"
-                        height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -217,58 +231,70 @@
               </div>
             </li>
 
+            <!-- Team Member 2 -->
             <li class="team-member">
-              <img src="./images/img-5.jpg" width="264" alt="smiling-man" />
+              <img
+                src="./images/smiling-man.jpg"
+                width="264"
+                alt="smiling-man"
+              />
               <div class="member-info">
                 <h3 class="list-header">Tom Ford</h3>
                 <p class="list-text">Frontend Developer</p>
+                <!-- HW4 Socmed SVG Icons -->
+                <ul class="list socmed-info">
+                  <!-- Instagram -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
+                      <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                <ul class="social-media list">
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+                  <!-- Twitter -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- Facebook -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- LinkedIn -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
-                      <svg
-                        width="16"
-                        height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -276,58 +302,70 @@
               </div>
             </li>
 
+            <!-- Team Member 3 -->
             <li class="team-member">
-              <img src="./images/img-6.jpg" width="264" alt="girl-pink-shirt" />
+              <img
+                src="./images/girl-pink-shirt.jpg"
+                width="264"
+                alt="girl-pink-shirt"
+              />
               <div class="member-info">
                 <h3 class="list-header">Camila Garcia</h3>
                 <p class="list-text">Marketing</p>
+                <!-- HW4 Socmed SVG Icons -->
+                <ul class="list socmed-info">
+                  <!-- Instagram -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
+                      <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                <ul class="social-media list">
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+                  <!-- Twitter -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- Facebook -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- LinkedIn -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
-                      <svg
-                        width="16"
-                        height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -335,58 +373,70 @@
               </div>
             </li>
 
+            <!-- Team Member 4 -->
             <li class="team-member">
-              <img src="./images/img-7.jpg" width="264" alt="man-gray-shirt" />
+              <img
+                src="./images/man-gray-shirt.jpg"
+                width="264"
+                alt="man-gray-shirt"
+              />
               <div class="member-info">
                 <h3 class="list-header">Daniel Wilson</h3>
                 <p class="list-text">UI Designer</p>
+                <!-- HW4 Socmed SVG Icons -->
+                <ul class="list socmed-info">
+                  <!-- Instagram -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
+                      <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                <ul class="social-media list">
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+                  <!-- Twitter -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- Facebook -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
+
+                  <!-- LinkedIn -->
+                  <li class="socmed-items">
+                    <a href="" class="socmed-link">
                       <svg
+                        class="socmed-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
                       >
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="socmed-link">
-                      <svg
-                        width="16"
-                        height="16"
-                        class="social-media-icon"
-                        fill="var(--cloud)"
-                      >
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -397,81 +447,91 @@
         </div>
       </section>
 
-      <!-- fifth section -->
+      <!-- Fifth Section -->
       <section class="fifth-section">
         <div class="container">
           <h2 class="header-title">Customers</h2>
-          <ul class="customer-list">
-            <li class="customer-item">
-              <a href="#" class="customer-link">
+          <ul class="list customer">
+            <!-- Cleint 1 -->
+            <li class="customer-list">
+              <a href="" class="customer-link">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="104"
                   height="56"
                   class="customer-icon"
-                  fill="currentColor"
                 >
-                  <use href="./images/icons.svg#icon-customers-1"></use>
+                  <use href="./images/icons.svg#client-1"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="customer-item">
-              <a href="#" class="customer-link">
+            <!-- Client 2 -->
+            <li class="customer-list">
+              <a href="" class="customer-link">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="104"
                   height="56"
                   class="customer-icon"
-                  fill="currentColor"
                 >
-                  <use href="./images/icons.svg#icon-customers-2"></use>
+                  <use href="./images/icons.svg#client-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="customer-item">
-              <a href="#" class="customer-link">
+
+            <!-- Client 3 -->
+            <li class="customer-list">
+              <a href="" class="customer-link">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="104"
                   height="56"
                   class="customer-icon"
-                  fill="currentColor"
                 >
-                  <use href="./images/icons.svg#icon-customers-3"></use>
+                  <use href="./images/icons.svg#client-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="customer-item">
-              <a href="#" class="customer-link">
+
+            <!-- Client 4 -->
+            <li class="customer-list">
+              <a href="" class="customer-link">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="104"
                   height="56"
                   class="customer-icon"
-                  fill="currentColor"
                 >
-                  <use href="./images/icons.svg#icon-customers-4"></use>
+                  <use href="./images/icons.svg#client-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="customer-item">
-              <a href="#" class="customer-link">
+
+            <!-- Client 5 -->
+            <li class="customer-list">
+              <a href="" class="customer-link">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="104"
                   height="56"
                   class="customer-icon"
-                  fill="currentColor"
                 >
-                  <use href="./images/icons.svg#icon-customers-5"></use>
+                  <use href="./images/icons.svg#client-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="customer-item">
-              <a href="#" class="customer-link">
+
+            <!-- Client 6 -->
+            <li class="customer-list">
+              <a href="" class="customer-link">
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="104"
                   height="56"
                   class="customer-icon"
-                  fill="currentColor"
                 >
-                  <use href="./images/icons.svg#icon-customers-6"></use>
+                  <use href="./images/icons.svg#client-6"></use>
                 </svg>
               </a>
             </li>
@@ -482,9 +542,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-container container">
-        <!-- Logo and Paragraph -->
-        <div class="logo-paragraph">
+      <div class="container">
+        <!-- Logo & Text -->
+        <div class="wrapper">
           <a class="logo link" href="./index.html"
             >Web<span class="footer-logo">Studio</span></a
           >
@@ -494,61 +554,62 @@
           </p>
         </div>
 
-        <!-- Social Media Container -->
-        <div class="social-media-container">
-          <!-- Social Media Paragraph -->
-          <p class="social-media-paragraph">Social media</p>
-
-          <!-- Social Media List -->
-          <ul class="social-media-list-footer">
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+        <!-- Social Media -->
+        <div class="wrapper">
+          <p class="footer-socmed-header">Social media</p>
+          <ul class="list footer-socmed">
+            <!-- Instagram Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#instagram-footer"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+            <!-- Twitter Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#twitter-footer"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+            <!-- Facebook Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#facebook-footer"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+            <!-- LinkedIn Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#linkedin-footer"></use>
                 </svg>
               </a>
             </li>
@@ -556,5 +617,23 @@
         </div>
       </div>
     </footer>
+
+    <div class="order-modal is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-button-close" data-modal-close>
+          <svg
+            class="modal-button-close-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+          >
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal JS -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

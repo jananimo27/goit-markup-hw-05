@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <!-- Normalize CSS -->
+
+    <!-- Style Normalization -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
     <!-- Google Fonts -->
@@ -18,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <!-- Main Stylesheet -->
+    <!-- Local CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -29,19 +30,18 @@
           <a class="logo link" href="./index.html"
             >Web<span class="header-logo">Studio</span></a
           >
-          <ul class="list">
+          <ul class="list menu">
             <li class="list-item">
               <a class="item link" href="./index.html">Studio</a>
             </li>
             <li class="list-item">
-              <a class="item link" href="./portfolio.html">Portfolio</a>
+              <a class="active item link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="list-item"><a class="item link" href="">Contacts</a></li>
           </ul>
         </nav>
-
         <address class="contacts">
-          <ul class="list">
+          <ul class="list address">
             <li class="contact-item">
               <a class="contact link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -71,10 +71,22 @@
             <li><button type="button" class="btn-menu">Marketing</button></li>
           </ul>
 
+          <!-- Services List -->
           <ul class="svc list">
             <li class="svc-item">
-              <a class="list link" href="">
-                <img src="./images/img-8.jpg" alt="banking app" width="360" />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/bank-app.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Banking App Interface Concept</h2>
                   <p class="list-text">App</p>
@@ -83,12 +95,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img
-                  src="./images/img-9.jpg"
-                  alt="cashless payment"
-                  width="360"
-                />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/cashless.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Cashless Payment</h2>
                   <p class="list-text">Marketing</p>
@@ -97,12 +116,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img
-                  src="./images/img-10.jpg"
-                  alt="meditation app"
-                  width="360"
-                />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/meditation.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Meditation App</h2>
                   <p class="list-text">App</p>
@@ -111,8 +137,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img src="./images/img-11.jpg" alt="taxi service" width="360" />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/taxi-service.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Taxi Service</h2>
                   <p class="list-text">Marketing</p>
@@ -121,12 +158,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img
-                  src="./images/img-12.jpg"
-                  alt="screen illustrations"
-                  width="360"
-                />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/screen-illus.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Screen Illustrations</h2>
                   <p class="list-text">Design</p>
@@ -135,12 +179,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img
-                  src="./images/img-13.jpg"
-                  alt="online course"
-                  width="360"
-                />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/online-course.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Online Courses</h2>
                   <p class="list-text">Marketing</p>
@@ -149,8 +200,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img src="./images/img-14.jpg" alt="IG stories" width="360" />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/ig-stories.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Instagram Stories Concept</h2>
                   <p class="list-text">Design</p>
@@ -159,8 +221,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img src="./images/img-15.jpg" alt="organic food" width="360" />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/organic-food.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Organic Food</h2>
                   <p class="list-text">Web Site</p>
@@ -169,8 +242,19 @@
             </li>
 
             <li class="svc-item">
-              <a class="list link" href="">
-                <img src="./images/img-16.jpg" alt="fresh coffee" width="360" />
+              <a class="svc link" href="">
+                <div class="svc-img">
+                  <img
+                    src="./images/fresh-coffee.jpg"
+                    alt="banking app"
+                    width="360"
+                  />
+                  <p class="svc-img-desc">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
                 <div class="svc-info">
                   <h2 class="list-header">Fresh Coffee</h2>
                   <p class="list-text">Web Site</p>
@@ -184,9 +268,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-container container">
-        <!-- Logo and Paragraph -->
-        <div class="logo-paragraph">
+      <div class="container">
+        <!-- Logo & Text -->
+        <div class="wrapper">
           <a class="logo link" href="./index.html"
             >Web<span class="footer-logo">Studio</span></a
           >
@@ -196,61 +280,62 @@
           </p>
         </div>
 
-        <!-- Social Media Container -->
-        <div class="social-media-container">
-          <!-- Social Media Paragraph -->
-          <p class="social-media-paragraph">Social media</p>
-
-          <!-- Social Media List -->
-          <ul class="social-media-list-footer">
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+        <!-- Social Media -->
+        <div>
+          <p class="footer-socmed-header">Social media</p>
+          <ul class="list footer-socmed">
+            <!-- Instagram Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#instagram-footer"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+            <!-- Twitter Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#twitter-footer"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+            <!-- Facebook Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#facebook-footer"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-media-item">
-              <a href="#" class="footer-socmed-link">
+            <!-- LinkedIn Icon -->
+            <li class="footer-socmed-icon">
+              <a href="" class="footer-socmed-link">
                 <svg
+                  class="footer-socmed-svg"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  class="social-media-icon-footer"
-                  fill="var(--cloud)"
                 >
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#linkedin-footer"></use>
                 </svg>
               </a>
             </li>
