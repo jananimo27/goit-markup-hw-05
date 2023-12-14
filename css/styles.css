@@ -1,5 +1,3 @@
-/* CSS Resets */
-
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +76,6 @@ body {
   list-style: none;
 }
 
-/* HW5 */
 .active.link {
   color: var(--ocean);
   position: relative;
@@ -186,7 +183,6 @@ li > .link:focus {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  /* HW5 */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -242,8 +238,6 @@ li > .link:focus {
 .info-card {
   flex-basis: calc((100% - 72px) / 4);
 }
-
-/* HW4 */
 
 .icon-container {
   display: flex;
@@ -352,7 +346,6 @@ li > .link:focus {
   fill: var(--cloud);
 }
 
-/* HW4 */
 /* Fifth Section */
 
 .fifth-section {
@@ -416,8 +409,6 @@ li > .link:focus {
   margin-bottom: 16px;
 }
 
-/* HW4 */
-
 .footer > .container {
   display: flex;
   align-items: baseline;
@@ -454,7 +445,6 @@ li > .link:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* HW5 */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -467,11 +457,7 @@ li > .link:focus {
   fill: var(--cloud);
 }
 
-/* FORTFOLIO PAGE */
-
-/* Main */
-
-/* Buttons */
+/* PORTFOLIO PAGE */
 
 .services-section {
   padding: 96px 0 120px 0;
@@ -513,10 +499,6 @@ li > .link:focus {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Reused item header from main  */
-
-/* Converting all images to block element */
-
 img {
   display: block;
 }
@@ -540,7 +522,6 @@ img {
   border-top: none;
 }
 
-/* HW4 */
 .svc.link {
   display: block;
   /* HW5 */
@@ -553,7 +534,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* HW5 */
 .svc-img {
   position: relative;
   overflow: hidden;
@@ -578,8 +558,6 @@ img {
 .svc.link:focus .svc-img-desc {
   transform: translateY(0%);
 }
-
-/* Modal */
 
 .order-modal {
   position: fixed;
